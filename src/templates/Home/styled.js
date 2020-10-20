@@ -19,7 +19,7 @@ export const StyledHomeSidebar = styled.aside`
 
 export const StyledHomeContent = styled.article`
   position: absolute;
-  z-index: 10;
+  z-index: 9;
   display: block;
 
   text-align: right;
