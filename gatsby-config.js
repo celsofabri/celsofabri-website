@@ -32,5 +32,5 @@ module.exports = {
       }
     }
   ],
-  pathPrefix: '/celsofabri.github.io'
+  pathPrefix: '/celsofabri-website'
 };
