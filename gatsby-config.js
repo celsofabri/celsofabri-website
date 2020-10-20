@@ -21,6 +21,16 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/assets/images/favicon-96x96.png`
       }
+    },
+    {
+      resolve: 'gatsby-source-graphql',
+      options: {
+        typeName: 'GCMS',
+        fieldName: 'celsofabri',
+        url:
+          'https://api-us-west-2.graphcms.com/v2/ckghbv4rpfvan01xr7zj027bb/master'
+      }
     }
-  ]
+  ],
+  pathPrefix: '/celsofabri.github.io'
 };

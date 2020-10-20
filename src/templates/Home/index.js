@@ -1,13 +1,24 @@
 import React from 'react';
-import { StyledWrapper } from 'assets/global/styled';
-import { StyledHome } from './styled';
+import {
+  StyledHome,
+  StyledHomeSidebar,
+  StyledHomeContent,
+  StyledHomeImage
+} from './styled';
+import ImageCelsoFabri from 'assets/images/home/img-celsofabri.jpg';
 
 const Home = () => {
   return (
     <StyledHome>
-      <StyledWrapper>
-        <h1>Hello World! :)</h1>
-      </StyledWrapper>
+      <StyledHomeSidebar>
+        <StyledHomeContent>
+          <h2>Celso Fabri</h2>
+          <p>Front-End Developer & UX/UI Designer</p>
+        </StyledHomeContent>
+      </StyledHomeSidebar>
+      <StyledHomeImage>
+        <img src={ImageCelsoFabri} alt="Celso Fabri Junior" />
+      </StyledHomeImage>
     </StyledHome>
   );
 };
