@@ -6,6 +6,7 @@ import {
   StyledHomeImage
 } from './styled';
 import ImageCelsoFabri from 'assets/images/home/img-celsofabri.jpg';
+import ImageCelsoFabri2x from 'assets/images/home/img-celsofabri@2x.jpg';
 
 const Home = () => {
   return (
@@ -17,7 +18,11 @@ const Home = () => {
         </StyledHomeContent>
       </StyledHomeSidebar>
       <StyledHomeImage>
-        <img src={ImageCelsoFabri} alt="Celso Fabri Junior" />
+        <img
+          src={ImageCelsoFabri}
+          srcset={ImageCelsoFabri2x}
+          alt="Celso Fabri Junior"
+        />
       </StyledHomeImage>
     </StyledHome>
   );
