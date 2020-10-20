@@ -32,5 +32,5 @@ module.exports = {
       }
     }
   ],
-  pathPrefix: '/celsofabri-website'
+  pathPrefix: '/'
 };
