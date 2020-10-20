@@ -1,3 +1,9 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #222f3e;
+}
