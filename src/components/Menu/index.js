@@ -7,25 +7,25 @@ const Menu = ({ isMenuOpen }) => {
     <StyledMenu isMenuOpen={isMenuOpen}>
       <StyledMenuList>
         <StyledMenuItem>
-          <Link to="/resume" title="Resume">
-            Resume
+          <Link to="/sobre" title="Sobre">
+            Sobre
           </Link>
         </StyledMenuItem>
-        <StyledMenuItem>
-          <Link to="/jobs" title="jobs">
-            jobs
-          </Link>
-        </StyledMenuItem>
-        <StyledMenuItem>
-          <Link to="/blog" title="blog">
-            blog
-          </Link>
-        </StyledMenuItem>
-        <StyledMenuItem>
-          <Link to="/contact" title="contact">
-            contact
-          </Link>
-        </StyledMenuItem>
+        {/*<StyledMenuItem>
+                  <Link to="/trabalhos" title="jobs">
+                    Trabalhos
+                  </Link>
+                </StyledMenuItem>
+                <StyledMenuItem>
+                  <Link to="/blog" title="blog">
+                    Blog
+                  </Link>
+                </StyledMenuItem>
+                <StyledMenuItem>
+                  <Link to="/contato" title="contato">
+                    Contato
+                  </Link>
+                </StyledMenuItem>*/}
       </StyledMenuList>
     </StyledMenu>
   );
