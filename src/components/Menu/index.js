@@ -7,22 +7,22 @@ const Menu = ({ isMenuOpen }) => {
     <StyledMenu isMenuOpen={isMenuOpen}>
       <StyledMenuList>
         <StyledMenuItem>
-          <Link to="/" title="Resume">
+          <Link to="/resume" title="Resume">
             Resume
           </Link>
         </StyledMenuItem>
         <StyledMenuItem>
-          <Link to="/" title="jobs">
+          <Link to="/jobs" title="jobs">
             jobs
           </Link>
         </StyledMenuItem>
         <StyledMenuItem>
-          <Link to="/" title="blog">
+          <Link to="/blog" title="blog">
             blog
           </Link>
         </StyledMenuItem>
         <StyledMenuItem>
-          <Link to="/" title="contact">
+          <Link to="/contact" title="contact">
             contact
           </Link>
         </StyledMenuItem>

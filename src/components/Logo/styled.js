@@ -8,7 +8,7 @@ export const StyledLogo = styled.h1`
   img {
     display: block;
     max-width: 50px;
-    height: auto;
+    height: 38px;
     margin: 0;
     padding: 0;
   }

@@ -21,7 +21,6 @@ export const StyledHomeContent = styled.article`
   position: absolute;
   z-index: 9;
   display: block;
-
   text-align: right;
   margin-right: -200px;
 

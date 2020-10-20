@@ -15,8 +15,8 @@ export const StyledMenu = styled.nav`
   background-color: rgba(255, 255, 255, 0.95);
   opacity: 0;
   visibility: hidden;
-  transform: scale(1.1);
-  transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale(1.15);
+  transform: scale3d(1.15, 1.15, 1.15);
   transition: all 0.4s ease-out;
   overflow: auto;
 
