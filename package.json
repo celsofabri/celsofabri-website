@@ -69,7 +69,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "predeploy": "yarn build --prefix-paths",
+    "predeploy": "yarn build --prefix-paths && cp CNAME ./public",
     "deploy": "gh-pages -d public"
   },
   "repository": {
