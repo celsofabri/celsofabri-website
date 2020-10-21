@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql } from 'gatsby';
 import Post from 'components/Post';
 import {
   StyledPage,
@@ -7,31 +7,14 @@ import {
   StyledContent,
   StyledTitle
 } from 'assets/global/styled';
-import { StyledPosts } from './styled';
 import ImageCelsoFabri from 'assets/images/home/img-celsofabri.jpg';
 import ImageCelsoFabri2x from 'assets/images/home/img-celsofabri@2x.jpg';
 
-const Blog = () => {
-  const { celsofabri } = useStaticQuery(graphql`
-    {
-      celsofabri {
-        posts(orderBy: id_DESC) {
-          id
-          slug
-          title
-          content {
-            html
-          }
-          image {
-            url
-          }
-        }
-      }
-    }
-  `);
-
-  const { posts } = celsofabri;
-
+const Single = ({
+  data: {
+    celsofabri: { post }
+  }
+}) => {
   return (
     <StyledPage>
       <StyledSidebar>
@@ -43,14 +26,28 @@ const Blog = () => {
       </StyledSidebar>
       <StyledContent>
         <StyledTitle>Blog</StyledTitle>
-        <StyledPosts>
-          {posts.map((post) => {
-            return <Post key={post.id} post={post} />;
-          })}
-        </StyledPosts>
+        <p>Interna do Post</p>
       </StyledContent>
     </StyledPage>
   );
 };
 
-export default Blog;
+export const BlogQuery = graphql`
+  query BlogQuery($id: ID!) {
+    celsofabri {
+      post(where: { id: $id }) {
+        id
+        slug
+        title
+        content {
+          html
+        }
+        image {
+          url
+        }
+      }
+    }
+  }
+`;
+
+export default Single;

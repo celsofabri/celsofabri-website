@@ -2,17 +2,19 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { StyledPost, StyledImage } from './styled';
 
-const Post = () => {
+const Post = ({ post }) => {
+  const { title, image, slug } = post;
+
   return (
     <StyledPost>
-      <Link to="/" title="Título do post">
+      <Link to={`/blog/${slug}`} title={title}>
         <StyledImage>
           <img
-            src="https://via.placeholder.com/800x600"
-            alt="Título do post"
+            src={image?.url || 'https://via.placeholder.com/800x600'}
+            alt={title}
           />
         </StyledImage>
-        <h3>O poder do background-position</h3>
+        <h3>{title}</h3>
       </Link>
     </StyledPost>
   );
