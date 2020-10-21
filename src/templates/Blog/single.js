@@ -1,12 +1,14 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Post from 'components/Post';
+import ReactMarkdown from 'react-markdown';
+import Header from 'components/Header';
 import {
   StyledPage,
   StyledSidebar,
   StyledContent,
   StyledTitle
 } from 'assets/global/styled';
+import { StyledHeader } from './styled';
 import ImageCelsoFabri from 'assets/images/home/img-celsofabri.jpg';
 import ImageCelsoFabri2x from 'assets/images/home/img-celsofabri@2x.jpg';
 
@@ -15,20 +17,29 @@ const Single = ({
     celsofabri: { post }
   }
 }) => {
+  const { title, content, image } = post;
+
   return (
-    <StyledPage>
-      <StyledSidebar>
-        <img
-          src={ImageCelsoFabri}
-          srcset={ImageCelsoFabri2x}
-          alt="Celso Fabri Junior"
-        />
-      </StyledSidebar>
-      <StyledContent>
-        <StyledTitle>Blog</StyledTitle>
-        <p>Interna do Post</p>
-      </StyledContent>
-    </StyledPage>
+    <React.Fragment>
+      <Header />
+      <StyledPage>
+        <StyledSidebar>
+          <img
+            src={ImageCelsoFabri}
+            srcset={ImageCelsoFabri2x}
+            alt="Celso Fabri Junior"
+          />
+        </StyledSidebar>
+        <StyledContent>
+          <StyledTitle>Blog</StyledTitle>
+          <StyledHeader>
+            <img src={image?.url} alt={title} />
+            <h3>{title}</h3>
+          </StyledHeader>
+          <ReactMarkdown>{content?.markdown}</ReactMarkdown>
+        </StyledContent>
+      </StyledPage>
+    </React.Fragment>
   );
 };
 
@@ -41,6 +52,7 @@ export const BlogQuery = graphql`
         title
         content {
           html
+          markdown
         }
         image {
           url
