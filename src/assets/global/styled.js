@@ -52,6 +52,7 @@ export const StyledContent = styled.article`
   a {
     display: inline-block;
     color: ${colors.gray400};
+    cursor: pointer;
 
     &:hover {
       color: ${colors.white};
