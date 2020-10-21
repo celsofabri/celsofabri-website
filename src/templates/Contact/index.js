@@ -1,10 +1,12 @@
 import React from 'react';
+import Social from 'components/Social';
 import {
   StyledPage,
   StyledSidebar,
   StyledContent,
   StyledTitle
 } from 'assets/global/styled';
+import { StyledContact } from './styled';
 import ImageCelsoFabri from 'assets/images/home/img-celsofabri.jpg';
 import ImageCelsoFabri2x from 'assets/images/home/img-celsofabri@2x.jpg';
 
@@ -20,18 +22,23 @@ const Contact = () => {
       </StyledSidebar>
       <StyledContent>
         <StyledTitle>Contato</StyledTitle>
-        <p>
-          Vamos conversar, me mande um e-mail em{' '}
-          <a
-            href="mailto:celso.fabri@gmail.com"
-            title="E-mail"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            celso.fabri@gmail.com
-          </a>
-          .{' '}
-        </p>
+
+        <StyledContact>
+          <h3>Vamos conversar :)</h3>
+          <p>
+            Me mande um e-mail no{' '}
+            <a
+              href="mailto:celso.fabri@gmail.com"
+              title="E-mail"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              celso.fabri@gmail.com
+            </a>{' '}
+            ou entre em contato através de minhas redes sociais.
+          </p>
+          <Social />
+        </StyledContact>
       </StyledContent>
     </StyledPage>
   );
