@@ -17,10 +17,10 @@ export const StyledHomeSidebar = styled.aside`
   height: 100%;
 
   @media screen and (max-width: 768px) {
-    order: 2;
     justify-content: center;
+    align-items: flex-end;
     width: 100%;
-    height: 70%;
+    height: 100%;
   }
 `;
 
@@ -30,6 +30,7 @@ export const StyledHomeContent = styled.article`
   display: block;
   text-align: right;
   margin-right: -200px;
+  padding: 0 0 50px 0;
 
   h2 {
     margin: 5px;
@@ -106,8 +107,11 @@ export const StyledHomeImage = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    order: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
     width: 100%;
-    height: 30%;
+    height: 100%;
   }
 `;
