@@ -105,7 +105,7 @@ const Resume = () => {
             >
               WX
             </a>{' '}
-            and{' '}
+            e{' '}
             <a
               href="https://andaraki.com.br"
               title="Andaraki Calçados"
@@ -118,7 +118,7 @@ const Resume = () => {
           </p>
           <p>
             Eu sou graduado no curso de Tecnologia em Produçõa
-            Multimídia (Web Design) pela Universidade Opet. I possuo
+            Multimídia (Web Design) pela Universidade Opet. Eu possuo
             habilidades visuais como <strong>UX/UI designer</strong>,
             mas meu foco atual é{' '}
             <strong>desenvolvimento front-end</strong>. Atualmente, eu

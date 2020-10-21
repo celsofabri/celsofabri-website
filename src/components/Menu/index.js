@@ -21,11 +21,12 @@ const Menu = ({ isMenuOpen }) => {
                     Blog
                   </Link>
                 </StyledMenuItem>
-                <StyledMenuItem>
-                  <Link to="/contato" title="contato">
-                    Contato
-                  </Link>
-                </StyledMenuItem>*/}
+              */}
+        <StyledMenuItem>
+          <Link to="/contato" title="contato">
+            Contato
+          </Link>
+        </StyledMenuItem>
       </StyledMenuList>
     </StyledMenu>
   );
