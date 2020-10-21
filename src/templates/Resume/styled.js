@@ -8,6 +8,12 @@ export const StyledResume = styled.div`
     font-weight: 700;
     color: ${colors.gray400};
   }
+
+  @media screen and (max-width: 768px) {
+    h3 {
+      font-size: 24px;
+    }
+  }
 `;
 
 export const StyledExperience = styled.ul`
@@ -62,6 +68,26 @@ export const StyledExperienceInfo = styled.div`
     margin: 0;
     font-size: 12px;
     font-weight: 700;
+  }
+
+  @media screen and (max-width: 768px) {
+    h4 {
+      font-size: 24px;
+    }
+
+    h5 {
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+    h4 {
+      font-size: 18px;
+    }
+
+    h5 {
+      font-size: 14px;
+    }
   }
 `;
 

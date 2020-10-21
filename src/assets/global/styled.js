@@ -26,6 +26,10 @@ export const StyledSidebar = styled.aside`
     height: 100%;
     object-fit: cover;
   }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const StyledContent = styled.article`
@@ -54,6 +58,11 @@ export const StyledContent = styled.article`
       background-color: ${colors.red400};
     }
   }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding: 100px 24px;
+  }
 `;
 
 export const StyledTitle = styled.h2`
@@ -66,5 +75,9 @@ export const StyledTitle = styled.h2`
   &:before {
     margin-right: 10px;
     content: '/';
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 38px;
   }
 `;

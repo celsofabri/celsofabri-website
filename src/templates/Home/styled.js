@@ -15,6 +15,13 @@ export const StyledHomeSidebar = styled.aside`
   align-items: center;
   width: 40%;
   height: 100%;
+
+  @media screen and (max-width: 768px) {
+    order: 2;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+  }
 `;
 
 export const StyledHomeContent = styled.article`
@@ -40,6 +47,51 @@ export const StyledHomeContent = styled.article`
     font-weight: 100;
     background-color: ${colors.white};
   }
+
+  @media screen and (max-width: 1160px) {
+    margin-right: 0;
+    text-align: center;
+
+    h2 {
+      font-size: 80px;
+      line-height: 1;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-right: 0;
+    text-align: center;
+
+    h2 {
+      font-size: 60px;
+    }
+
+    p {
+      font-size: 32px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    margin-right: 0;
+    text-align: center;
+
+    h2 {
+      font-size: 42px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    margin-right: 0;
+    text-align: center;
+
+    h2 {
+      font-size: 36px;
+    }
+  }
 `;
 
 export const StyledHomeImage = styled.div`
@@ -51,5 +103,11 @@ export const StyledHomeImage = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  @media screen and (max-width: 768px) {
+    order: 1;
+    width: 100%;
+    height: 30%;
   }
 `;

@@ -28,6 +28,11 @@ export const StyledMenu = styled.nav`
       transform: scale(1);
       transform: scale3d(1, 1, 1);
     `}
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+    padding: 0 24px;
+  }
 `;
 
 export const StyledMenuList = styled.ul`
@@ -64,5 +69,21 @@ export const StyledMenuItem = styled.li`
         opacity: 1;
       }
     }
+
+    @media screen and (max-width: 768px) {
+      font-size: 60px;
+
+      &:before {
+        opacity: 1;
+      }
+    }
+
+    @media screen and (max-width: 520px) {
+      font-size: 32px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
   }
 `;
