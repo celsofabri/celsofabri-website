@@ -7,7 +7,7 @@ const Post = ({ project }) => {
 
   return (
     <StyledProject>
-      <Link to={`/blog/${slug}`} title={title}>
+      <Link to={`/portfolio/${slug}`} title={title}>
         <StyledImage>
           <img
             src={image?.url || 'https://via.placeholder.com/800x600'}
