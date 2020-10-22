@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { StyledProject, StyledImage } from './styled';
+import { StyledProject, StyledInfo, StyledImage } from './styled';
 
 const Post = ({ project }) => {
   const { title, image, slug } = project;
@@ -14,7 +14,10 @@ const Post = ({ project }) => {
             alt={title}
           />
         </StyledImage>
-        <h3>{title}</h3>
+        <StyledInfo>
+          <h6>IMAM</h6>
+          <h3>{title}</h3>
+        </StyledInfo>
       </Link>
     </StyledProject>
   );

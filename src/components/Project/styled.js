@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { colors } from 'assets/global/tokens';
 
 export const StyledProject = styled.div`
+  position: relative;
   display: inline-block;
   max-width: 45%;
   margin: 2.5%;
@@ -10,18 +11,12 @@ export const StyledProject = styled.div`
     display: inline-block;
     text-decoration: none;
 
-    h3 {
-      font-size: 28px;
-      font-weight: 700;
-      line-height: 1.4;
-    }
-
     &:hover {
       color: initial;
       background-color: initial;
 
       h3 {
-        color: ${colors.blue400};
+        color: ${colors.red400};
       }
 
       img {
@@ -36,17 +31,43 @@ export const StyledProject = styled.div`
     max-width: 100%;
   }
 
-  @media screen and (max-width: 1380px) {
-    a {
-      h3 {
-        font-size: 24px;
-      }
-    }
-  }
-
   @media screen and (max-width: 1140px) {
     display: block;
     max-width: 100%;
+  }
+`;
+
+export const StyledInfo = styled.div`
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 6;
+  margin: 0;
+
+  h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: ${colors.white};
+    line-height: 1.4;
+  }
+
+  h6 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: ${colors.white};
+    line-height: 1.4;
+  }
+
+  @media screen and (max-width: 460px) {
+    h3 {
+      font-size: 14px;
+    }
+
+    h6 {
+      font-size: 20px;
+    }
   }
 `;
 
@@ -90,5 +111,13 @@ export const StyledImage = styled.div`
 
   @media screen and (max-width: 1140px) {
     height: 300px;
+  }
+
+  @media screen and (max-width: 460px) {
+    height: 250px;
+  }
+
+  @media screen and (max-width: 380px) {
+    height: 220px;
   }
 `;

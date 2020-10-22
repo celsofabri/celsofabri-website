@@ -43,6 +43,14 @@ export const StyledPost = styled.div`
     display: block;
     max-width: 100%;
   }
+
+  @media screen and (max-width: 460px) {
+    a {
+      h3 {
+        font-size: 20px;
+      }
+    }
+  }
 `;
 
 export const StyledImage = styled.div`
@@ -65,5 +73,13 @@ export const StyledImage = styled.div`
 
   @media screen and (max-width: 1140px) {
     height: 300px;
+  }
+
+  @media screen and (max-width: 460px) {
+    height: 250px;
+  }
+
+  @media screen and (max-width: 380px) {
+    height: 220px;
   }
 `;
