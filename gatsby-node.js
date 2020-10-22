@@ -12,7 +12,7 @@ exports.createPages = async ({
 }) => {
   const {
     data: {
-      celsofabri: { posts, projects, companies }
+      celsofabri: { posts, projects }
     }
   } = await graphql(
     `
@@ -25,9 +25,6 @@ exports.createPages = async ({
           projects {
             id
             slug
-          }
-          companies {
-            id
           }
         }
       }
