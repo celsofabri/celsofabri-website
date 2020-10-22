@@ -12,13 +12,17 @@ exports.createPages = async ({
 }) => {
   const {
     data: {
-      celsofabri: { posts }
+      celsofabri: { posts, projects }
     }
   } = await graphql(
     `
       {
         celsofabri {
           posts {
+            id
+            slug
+          }
+          projects {
             id
             slug
           }
@@ -32,6 +36,19 @@ exports.createPages = async ({
     createPage({
       path: `/blog/${slug}`,
       component: require.resolve(`./src/templates/Blog/single.js`),
+      context: {
+        id
+      }
+    });
+  });
+
+  projects.forEach(({ id, slug }) => {
+    console.log('posts:', 'id', id, 'slug', slug);
+    createPage({
+      path: `/blog/${slug}`,
+      component: require.resolve(
+        `./src/templates/Projects/single.js`
+      ),
       context: {
         id
       }

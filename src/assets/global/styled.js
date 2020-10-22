@@ -36,7 +36,7 @@ export const StyledContent = styled.article`
   display: block;
   width: 65%;
   height: 100%;
-  padding: 100px 140px 100px 40px;
+  padding: 100px 40px;
   overflow: auto;
 
   p {
