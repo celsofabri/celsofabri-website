@@ -19,6 +19,10 @@ const Projects = () => {
           id
           slug
           title
+          company {
+            name
+            url
+          }
           content {
             html
           }

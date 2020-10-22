@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import { StyledProject, StyledInfo, StyledImage } from './styled';
 
 const Post = ({ project }) => {
-  const { title, image, slug } = project;
+  const { title, company, image, slug } = project;
 
   return (
     <StyledProject>
@@ -15,7 +15,7 @@ const Post = ({ project }) => {
           />
         </StyledImage>
         <StyledInfo>
-          <h6>IMAM</h6>
+          <h6>{company?.name}</h6>
           <h3>{title}</h3>
         </StyledInfo>
       </Link>

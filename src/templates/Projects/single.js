@@ -8,7 +8,7 @@ import {
   StyledContent,
   StyledTitle
 } from 'assets/global/styled';
-import { StyledHeader } from './styled';
+import { StyledHeader, StyledInfo } from './styled';
 import ImageCelsoFabri from 'assets/images/home/img-celsofabri.jpg';
 import ImageCelsoFabri2x from 'assets/images/home/img-celsofabri@2x.jpg';
 
@@ -17,7 +17,7 @@ const Single = ({
     celsofabri: { project }
   }
 }) => {
-  const { title, content, image } = project;
+  const { title, company, content, image } = project;
 
   return (
     <React.Fragment>
@@ -34,7 +34,19 @@ const Single = ({
           <StyledTitle>Portfólio</StyledTitle>
           <StyledHeader>
             <img src={image?.url} alt={title} />
-            <h3>{title}</h3>
+            <StyledInfo>
+              <h6>
+                <a
+                  href={company?.url}
+                  title={company?.name}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {company?.name}
+                </a>
+              </h6>
+              <h3>{title}</h3>
+            </StyledInfo>
           </StyledHeader>
           <ReactMarkdown>{content?.markdown}</ReactMarkdown>
         </StyledContent>
@@ -50,6 +62,10 @@ export const ProjectQuery = graphql`
         id
         slug
         title
+        company {
+          name
+          url
+        }
         content {
           html
           markdown
