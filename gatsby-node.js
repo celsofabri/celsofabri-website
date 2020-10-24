@@ -32,7 +32,6 @@ exports.createPages = async ({
   );
 
   posts.forEach(({ id, slug }) => {
-    console.log('posts:', 'id', id, 'slug', slug);
     createPage({
       path: `/blog/${slug}`,
       component: require.resolve(`./src/templates/Blog/single.js`),
@@ -43,7 +42,6 @@ exports.createPages = async ({
   });
 
   projects.forEach(({ id, slug }) => {
-    console.log('posts:', 'id', id, 'slug', slug);
     createPage({
       path: `/portfolio/${slug}`,
       component: require.resolve(

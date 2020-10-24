@@ -57,4 +57,3 @@ $ yarn deploy
 ```
 
 This command will make the automatic deploy of the branch `gh-pages` and your site will be automatically published.
-
