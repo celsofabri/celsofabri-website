@@ -64,6 +64,7 @@ export const StyledImage = styled.div`
     width: 100%;
     height: 300px;
     object-fit: cover;
+    object-position: center;
     transition: all 60s ease-out;
   }
 
