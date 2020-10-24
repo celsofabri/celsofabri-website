@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from 'components/SEO';
 import {
   StyledPage,
   StyledSidebar,
@@ -29,6 +30,7 @@ import LogoAndaraki from 'assets/images/resume/logo-andaraki.svg';
 const Resume = () => {
   return (
     <StyledPage>
+      <SEO title="Sobre | Celso Fabri Junior" />
       <StyledSidebar>
         <img
           src={ImageCelsoFabri}

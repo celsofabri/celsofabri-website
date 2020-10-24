@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
+import SEO from 'components/SEO';
 import Post from 'components/Post';
 import {
   StyledPage,
@@ -34,6 +35,7 @@ const Blog = () => {
 
   return (
     <StyledPage>
+      <SEO title="Blog | Celso Fabri Junior" />
       <StyledSidebar>
         <img
           src={ImageCelsoFabri}

@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from 'components/SEO';
 import {
   StyledHome,
   StyledHomeSidebar,
@@ -11,6 +12,7 @@ import ImageCelsoFabri2x from 'assets/images/home/img-celsofabri@2x.jpg';
 const Home = () => {
   return (
     <StyledHome>
+      <SEO />
       <StyledHomeSidebar>
         <StyledHomeContent>
           <h2>Celso Fabri</h2>

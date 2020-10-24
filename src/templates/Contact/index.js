@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from 'components/SEO';
 import Social from 'components/Social';
 import {
   StyledPage,
@@ -13,6 +14,7 @@ import ImageCelsoFabri2x from 'assets/images/home/img-celsofabri@2x.jpg';
 const Contact = () => {
   return (
     <StyledPage>
+      <SEO title="Contato | Celso Fabri Junior" />
       <StyledSidebar>
         <img
           src={ImageCelsoFabri}

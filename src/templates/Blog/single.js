@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import ReactMarkdown from 'react-markdown';
+import SEO from 'components/SEO';
 import Header from 'components/Header';
 import {
   StyledPage,
@@ -21,6 +22,7 @@ const Single = ({
 
   return (
     <React.Fragment>
+      <SEO title={`Blog - ${title} | Celso Fabri Junior`} />
       <Header />
       <StyledPage>
         <StyledSidebar>

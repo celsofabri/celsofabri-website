@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Celso Fabri Junior | Front-End Developer & UX/UI Designer`,
-    description: `Come create the revolution!`,
-    author: `@celsofabri`
+    title: `Celso Fabri Junior`,
+    description: `Front-End Developer & UX/UI Designer`,
+    author: `Celso Fabri Junior`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
