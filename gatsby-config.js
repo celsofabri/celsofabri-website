@@ -42,7 +42,8 @@ module.exports = {
       options: {
         id: 'GTM-K358MXD',
         includeInDevelopment: false,
-        defaultDataLayer: { platform: 'gatsby' }
+        defaultDataLayer: { platform: 'gatsby' },
+        routeChangeEventName: 'Google Analytics - Page View'
       }
     }
   ],
