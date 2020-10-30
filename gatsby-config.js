@@ -36,6 +36,14 @@ module.exports = {
         url:
           'https://api-us-west-2.graphcms.com/v2/ckghbv4rpfvan01xr7zj027bb/master'
       }
+    },
+    {
+      resolve: 'gatsby-plugin-google-tagmanager',
+      options: {
+        id: 'GTM-K358MXD',
+        includeInDevelopment: false,
+        defaultDataLayer: { platform: 'gatsby' }
+      }
     }
   ],
   pathPrefix: '/'
