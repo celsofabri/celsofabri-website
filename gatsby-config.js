@@ -42,11 +42,8 @@ module.exports = {
       options: {
         id: 'GTM-K358MXD',
         includeInDevelopment: false,
-        defaultDataLayer: function () {
-          return {
-            pageType: window.pageType
-          };
-        }
+        defaultDataLayer: { platform: 'gatsby' },
+        routeChangeEventName: 'gatsby-route-change'
       }
     }
   ],
