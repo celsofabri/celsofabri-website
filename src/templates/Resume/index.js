@@ -183,6 +183,22 @@ const Resume = () => {
                 <p>Setembro/2020 - Novembro/2020</p>
               </StyledExperienceInfo>
             </StyledExperienceHead>
+            <StyledExperienceContent>
+              <p>
+                Durante minha experiência na ateliware, tive a
+                oportunidade de desenvolver o novo site da empresa. O
+                trabalho foi migrar o site atual desenvolvido em
+                Webflow para a nova tecnologia utilizando React with
+                Gatsby. Para a criação do conteúdo foi escolhido o
+                GraphCMS, um Sistema de Gerenciamento de Conteúdo em
+                GraphQL. O ganho com as novas tecnologias foi a
+                vantagem com relação ao desempenho, manutenção e
+                controle do aplicativo além de que foram corrigidos
+                outros pontos como semântica, acessibilidade e
+                responsividade que era um débito técnico na versão
+                antiga.
+              </p>
+            </StyledExperienceContent>
           </StyledExperienceItem>
 
           <StyledExperienceItem>
