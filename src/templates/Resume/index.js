@@ -18,6 +18,7 @@ import {
 } from './styled';
 import ImageCelsoFabri from 'assets/images/home/img-celsofabri.jpg';
 import ImageCelsoFabri2x from 'assets/images/home/img-celsofabri@2x.jpg';
+import LogoDeliveryCenter from 'assets/images/resume/logo-deliverycenter.svg';
 import LogoAteliware from 'assets/images/resume/logo-ateliware.svg';
 import LogoBcredi from 'assets/images/resume/logo-bcredi.svg';
 import LogoMadeiraMadeira from 'assets/images/resume/logo-madeiramadeira.svg';
@@ -45,15 +46,24 @@ const Resume = () => {
           <p>
             Atualmente eu trabalho na{' '}
             <a
+              href="https://deliverycenter.com"
+              title="Delivery Center"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Delivery Center
+            </a>{' '}
+            como <strong>desenvolvedor front-end</strong>, mas eu já
+            trabalhei em outras empresas como{' '}
+            <a
               href="https://ateliware.com"
               title="ateliware"
               target="_blank"
               rel="noopener noreferrer"
             >
               ateliware
-            </a>{' '}
-            como <strong>desenvolvedor front-end</strong>, mas eu já
-            trabalhei em outras empresas como{' '}
+            </a>
+            ,{' '}
             <a
               href="https://bcredi.com.br"
               title="Bcredi"
@@ -132,6 +142,29 @@ const Resume = () => {
           <StyledExperienceItem>
             <StyledExperienceHead>
               <StyledExperienceLink
+                href="https://deliverycenter.com"
+                title="Delivery Center"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={LogoDeliveryCenter}
+                  width="80"
+                  height="80"
+                  alt="Delivery Center"
+                />
+              </StyledExperienceLink>
+              <StyledExperienceInfo>
+                <h4>Delivery Center</h4>
+                <h5>Front-End Developer</h5>
+                <p>Novembro/2020 - Até o momento</p>
+              </StyledExperienceInfo>
+            </StyledExperienceHead>
+          </StyledExperienceItem>
+
+          <StyledExperienceItem>
+            <StyledExperienceHead>
+              <StyledExperienceLink
                 href="https://ateliware.com"
                 title="ateliware"
                 target="_blank"
@@ -147,7 +180,7 @@ const Resume = () => {
               <StyledExperienceInfo>
                 <h4>ateliware</h4>
                 <h5>Front-End Developer</h5>
-                <p>Setembro/2020 - Até o momento</p>
+                <p>Setembro/2020 - Novembro/2020</p>
               </StyledExperienceInfo>
             </StyledExperienceHead>
           </StyledExperienceItem>
