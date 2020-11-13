@@ -36,8 +36,8 @@ const Experience = ({ company }) => {
       <StyledExperienceHead>
         {logo?.url && (
           <StyledExperienceLink
-            href="https://deliverycenter.com"
-            title="Delivery Center"
+            href={url}
+            title={name}
             target="_blank"
             rel="noopener noreferrer"
           >
