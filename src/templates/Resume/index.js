@@ -63,7 +63,7 @@ const Resume = () => {
       <StyledSidebar>
         <img
           src={ImageCelsoFabri}
-          srcset={ImageCelsoFabri2x}
+          srcSet={ImageCelsoFabri2x}
           alt="Celso Fabri Junior"
         />
       </StyledSidebar>
@@ -177,8 +177,8 @@ const Resume = () => {
         </StyledResume>
         {companies.length > 0 && (
           <StyledExperience>
-            {companies.map((company) => {
-              return <Experience company={company} />;
+            {companies.map((company, index) => {
+              return <Experience key={index} company={company} />;
             })}
           </StyledExperience>
         )}

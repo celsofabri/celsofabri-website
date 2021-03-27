@@ -18,7 +18,7 @@ const Contact = () => {
       <StyledSidebar>
         <img
           src={ImageCelsoFabri}
-          srcset={ImageCelsoFabri2x}
+          srcSet={ImageCelsoFabri2x}
           alt="Celso Fabri Junior"
         />
       </StyledSidebar>
