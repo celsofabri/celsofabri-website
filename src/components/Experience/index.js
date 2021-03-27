@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import { format } from 'date-fns';
+import { ptBR } from 'date-fns/locale';
 import {
   StyledExperienceItem,
   StyledExperienceHead,
@@ -20,15 +22,10 @@ const Experience = ({ company }) => {
     resume
   } = company;
 
-  const formatDate = (value) => {
-    const dateReplaced = value.replace('-', '/');
-    const date = new Date(dateReplaced);
-    const options = {
-      month: 'long',
-      year: 'numeric'
-    };
-
-    return date.toLocaleDateString('pt-BR', options);
+  const formatDate = (date) => {
+    return format(new Date(date), 'MMMM yyyy', {
+      locale: ptBR
+    });
   };
 
   return (
@@ -51,7 +48,7 @@ const Experience = ({ company }) => {
           {(startDate || endDate) && (
             <p>
               {startDate && formatDate(startDate)} -{' '}
-              {(endDate && formatDate(endDate)) || 'Até o momento'}
+              {endDate ? formatDate(endDate) : 'até o momento'}
             </p>
           )}
         </StyledExperienceInfo>
