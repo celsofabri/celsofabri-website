@@ -171,8 +171,7 @@ const Resume = () => {
             habilidades visuais como <strong>UX/UI designer</strong>,
             mas meu foco atual é{' '}
             <strong>desenvolvimento front-end</strong>. Atualmente, eu
-            estou trabalhando com ReactJS e aprendendo um pouco sobre
-            VueJS e Elixir.
+            estou trabalhando com ReactJS e VueJS.
           </p>
         </StyledResume>
         {companies.length > 0 && (
