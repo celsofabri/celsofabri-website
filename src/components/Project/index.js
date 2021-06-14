@@ -15,7 +15,7 @@ const Post = ({ project }) => {
           />
         </StyledImage>
         <StyledInfo>
-          <h6>{company?.name}</h6>
+          {company?.name && <h6>{company?.name}</h6>}
           <h3>{title}</h3>
         </StyledInfo>
       </Link>
