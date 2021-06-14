@@ -166,7 +166,7 @@ const Resume = () => {
             .
           </p>
           <p>
-            Eu sou graduado no curso de Tecnologia em Produçõa
+            Eu sou graduado no curso de Tecnologia em Produção
             Multimídia (Web Design) pela Universidade Opet. Eu possuo
             habilidades visuais como <strong>UX/UI designer</strong>,
             mas meu foco atual é{' '}
