@@ -39,16 +39,18 @@ const Single = ({
           <StyledHeader>
             <img src={image?.url} alt={title} />
             <StyledInfo>
-              <h6>
-                <a
-                  href={company?.url}
-                  title={company?.name}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {company?.name}
-                </a>
-              </h6>
+              {company?.name && (
+                <h6>
+                  <a
+                    href={company?.url}
+                    title={company?.name}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {company?.name}
+                  </a>
+                </h6>
+              )}
               <h3>{title}</h3>
             </StyledInfo>
           </StyledHeader>
