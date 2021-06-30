@@ -2,7 +2,7 @@
 
 My personal site [Celso Fabri](https://celsofabri.com) 2020.
 
-![Celso Fabri Junior](./src/assets/images/general/logo.svg)
+![Celso Fabri Junior](./src/assets/images/general/logo-white.svg)
 
 This project was bootstrapped with [Gatsby Default Starter](https://github.com/gatsbyjs/gatsby-starter-default).
 
