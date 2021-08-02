@@ -74,15 +74,24 @@ const Resume = () => {
           <p>
             Atualmente eu trabalho na{' '}
             <a
+              href="https://ifood.com.br"
+              title="Delivery Much"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              iFood
+            </a>{' '}
+            como <strong>desenvolvedor front-end</strong>, mas eu já
+            trabalhei em outras empresas como{' '}
+            <a
               href="https://deliverymuch.com.br"
               title="Delivery Much"
               target="_blank"
               rel="noopener noreferrer"
             >
               Delivery Much
-            </a>{' '}
-            como <strong>desenvolvedor front-end</strong>, mas eu já
-            trabalhei em outras empresas como{' '}
+            </a>
+            ,{' '}
             <a
               href="https://deliverycenter.com"
               title="Delivery Center"
