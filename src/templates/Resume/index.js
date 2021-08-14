@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
+import ReactMarkdown from 'react-markdown';
 import SEO from 'components/SEO';
 import Experience from 'components/Experience';
 import {
@@ -35,6 +36,12 @@ const Resume = () => {
     graphql`
       {
         celsofabri {
+          abouts {
+            resume {
+              html
+              markdown
+            }
+          }
           companies(orderBy: startDate_DESC) {
             id
             name
@@ -55,7 +62,7 @@ const Resume = () => {
     `
   );
 
-  const { companies } = celsofabri;
+  const { companies, abouts } = celsofabri;
 
   return (
     <StyledPage>
@@ -70,118 +77,7 @@ const Resume = () => {
       <StyledContent>
         <StyledTitle>Sobre</StyledTitle>
         <StyledResume>
-          <h3>Celso Fabri Junior</h3>
-          <p>
-            Atualmente eu trabalho na{' '}
-            <a
-              href="https://ifood.com.br"
-              title="Delivery Much"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              iFood
-            </a>{' '}
-            como <strong>desenvolvedor front-end</strong>, mas eu já
-            trabalhei em outras empresas como{' '}
-            <a
-              href="https://deliverymuch.com.br"
-              title="Delivery Much"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Delivery Much
-            </a>
-            ,{' '}
-            <a
-              href="https://deliverycenter.com"
-              title="Delivery Center"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Delivery Center
-            </a>
-            ,{' '}
-            <a
-              href="https://ateliware.com"
-              title="ateliware"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              ateliware
-            </a>
-            ,{' '}
-            <a
-              href="https://bcredi.com.br"
-              title="Bcredi"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Bcredi
-            </a>
-            ,{' '}
-            <a
-              href="https://madeiramadeira.com.br"
-              title="MadeiraMadeira"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              MadeiraMadeira
-            </a>
-            ,{' '}
-            <a
-              href="https://ebanx.com"
-              title="EBANX"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              EBANX
-            </a>
-            ,{' '}
-            <a
-              href="https://snowmanlabs.com.br"
-              title="Snowman Labs"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Snowman Labs
-            </a>
-            ,{' '}
-            <a
-              href="https://imam.ag"
-              title="IMAM Publicidade"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              IMAM
-            </a>
-            ,{' '}
-            <a
-              href="https://agenciawx.com.br"
-              title="Agência WX"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              WX
-            </a>{' '}
-            e{' '}
-            <a
-              href="https://andaraki.com.br"
-              title="Andaraki Calçados"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Andaraki
-            </a>
-            .
-          </p>
-          <p>
-            Eu sou graduado no curso de Tecnologia em Produção
-            Multimídia (Web Design) pela Universidade Opet. Eu possuo
-            habilidades visuais como <strong>UX/UI designer</strong>,
-            mas meu foco atual é{' '}
-            <strong>desenvolvimento front-end</strong>. Atualmente, eu
-            estou trabalhando com ReactJS e VueJS.
-          </p>
+          <ReactMarkdown>{abouts[0]?.resume?.markdown}</ReactMarkdown>
         </StyledResume>
         {companies.length > 0 && (
           <StyledExperience>
